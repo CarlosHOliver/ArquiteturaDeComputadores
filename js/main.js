@@ -195,7 +195,6 @@ function renderAulaContent(aula, topicIndex) {
         <div class="aula-header-content">
             <div class="aula-number-large">${aula.id.toString().padStart(2, '0')}</div>
             <h1 class="aula-title-large">${aula.title}</h1>
-            <p class="aula-description">${aula.description}</p>
         </div>
         
         <div class="topic-content">
@@ -206,13 +205,6 @@ function renderAulaContent(aula, topicIndex) {
             <div class="topic-text">
                 ${formatTopicContent(topic.content)}
             </div>
-        </div>
-        
-        <div class="aula-actions text-center">
-            <button class="quiz-button" onclick="openQuiz(${aula.id})">
-                <i class="fas fa-question-circle"></i>
-                Fazer Quiz da Aula
-            </button>
         </div>
     `;
     
